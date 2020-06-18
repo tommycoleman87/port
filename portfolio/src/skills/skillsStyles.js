@@ -7,6 +7,10 @@ export const SkillsContainer = styled.div`
     width: 500px;
     height: 400px;
     justify-content: space-around;
+
+    h1 {
+        width: 100%;
+    }
 `
 
 export const Skill = styled.img`
@@ -16,7 +20,7 @@ export const Skill = styled.img`
     margin: 10px 10px 10px 10px;
     &:hover {
         animation: shake 0.5s;
-        animation-iteration-count: 1;
+        animation-iteration-count: infinte;
     }
 
     @keyframes shake {

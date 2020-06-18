@@ -8,10 +8,12 @@ import ReactNative from './skillsIcons/react-native.png'
 import CSS from './skillsIcons/css.png'
 import LESS from './skillsIcons/less.png'
 import SASS from './skillsIcons/sass.png'
+
 const Skills = () => {
-    const [skills, setSkills] = useState([Python, react, Node, HTML, ReactNative, CSS, LESS, SASS, 'HTML', 'SQL'])
+    const [skills, setSkills] = useState([Python, react, Node, HTML, ReactNative, CSS, LESS, SASS])
     return (
         <SkillsContainer>
+            <h1>SKILLS</h1>
             {skills.map(skill => {
                 return <Skill src={skill} alt='icon' />
             })}

@@ -1,19 +1,24 @@
 import React from 'react'
-import {UL} from './navStyles'
-
+import { UL, NavContainer } from './navStyles'
+import {BrowserRouter as Router, Link} from 'react-router-dom'
 const Nav = () => {
     return (
-        <UL>
-            <li>
-                <a href='#'>About</a>
-            </li>
-            <li>
-                <a href='#'>Skills</a>
-            </li>
-            <li>
-                <a href='#'>Projects</a>
-            </li>
+     
+        <NavContainer>
+            <UL>
+                <li>
+                    <Link to='/'>About</Link>
+                </li>
+                <li>
+                <Link to='/skills'>Skills</Link>
+                </li>
+                <li>
+                <Link to='/projects'>Projects</Link>
+                </li>
             </UL>
+            
+        </NavContainer>
+
 
     )
 }
